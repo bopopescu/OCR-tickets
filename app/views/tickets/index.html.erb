@@ -3,7 +3,7 @@
 <% @tickets.each do |ticket| %>
   <div class="ticket">
     <%= link_to ticket.tess_text, ticket_path(ticket) %>
-    <%= image_tag(ticket.url(:thumb)) %>
+    <%= image_tag(ticket.ticket_img.url(:thumb)) %>
   </div>
 <% end %>
 
