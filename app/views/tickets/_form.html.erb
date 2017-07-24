@@ -1,0 +1,7 @@
+<%= render "layouts/errors", :object => @ticket%>
+
+<%= form_for @ticket do |f| %>
+  <%= f.label :ticket_img, "Upload Ticket Image", class: 'col-sm-2 control-label' %>
+  <%= f.file_field :ticket_img %><br>
+  <%= f.submit "Add ticket", class: "btn btn-primary" %>
+<% end %>

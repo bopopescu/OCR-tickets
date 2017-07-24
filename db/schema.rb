@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170724153708) do
+ActiveRecord::Schema.define(version: 20170724162021) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 20170724153708) do
     t.string "ticket_content_type"
     t.integer "ticket_file_size"
     t.datetime "ticket_updated_at"
+    t.string "tess_text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tickets", force: :cascade do |t|
+    t.string "ticket_img_file_name"
+    t.string "ticket_img_content_type"
+    t.integer "ticket_img_file_size"
+    t.datetime "ticket_img_updated_at"
     t.string "tess_text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

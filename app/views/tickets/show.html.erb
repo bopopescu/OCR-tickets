@@ -1,0 +1,10 @@
+<h1><%= @ticket.tess_text %></h1>
+<%= image_tag(ticket.url(:medium)) %>
+
+<p><%= link_to "Edit", edit_ticket_path(@ticket) %></p>
+<p><%= link_to "Delete", ticket_path(@ticket),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+
+
+<p><%= link_to "Return to home", tickets_path %></p>
