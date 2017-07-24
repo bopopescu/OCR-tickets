@@ -15,6 +15,7 @@ class TicketsController < ApplicationController
   def create
     @ticket = Ticket.new(ticket_params)
     if @ticket.save
+      flash[:notice] = "Ticket added!"
       redirect_to tickets_path
     else
       render :new
@@ -28,6 +29,7 @@ class TicketsController < ApplicationController
   def update
     @ticket= Ticket.find(params[:id])
     if @ticket.update(ticket_params)
+      flash[:notice] = "Ticket updated!"
       redirect_to tickets_path
     else
       render :edit
@@ -37,6 +39,7 @@ class TicketsController < ApplicationController
   def destroy
     @ticket = Ticket.find(params[:id])
     @ticket.destroy
+    flash[:alert] = "Ticket deleted!"
     redirect_to tickets_path
   end
 
