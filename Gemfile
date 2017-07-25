@@ -30,7 +30,9 @@ gem 'jbuilder', '~> 2.5'
 gem "paperclip", "~> 5.0.0"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "jquery-rails"
-gem "tesseract-ocr"
+gem "google-cloud-vision"
+gem 'rest-client'
+gem 'dotenv-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
