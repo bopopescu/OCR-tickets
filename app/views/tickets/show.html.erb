@@ -6,10 +6,12 @@
 <h3><strong>City:</strong> <%= @ticket.city %> </h3>
 <h3><strong>Date:</strong> <%= @ticket.date %> </h3>
 
-<h1>Setlist</h1>
-<div class="songs">
-  <%= @setlist %>
-</div>
+<h2>Setlist</h2>
+<ul>
+  <% @setlist.each do |song| %>
+    <li><%= song.fetch("name") %></li>
+  <% end %>
+</ul>
 
 <p><%= link_to "Edit", edit_ticket_path(@ticket) %></p>
 <p><%= link_to "Delete", ticket_path(@ticket),
