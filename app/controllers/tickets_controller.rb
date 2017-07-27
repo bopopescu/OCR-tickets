@@ -6,6 +6,7 @@ class TicketsController < ApplicationController
 
   def show
     @ticket = Ticket.find(params[:id])
+    binding.pry
     @setlist = @ticket.get_concerts_list_by_artist(@ticket.band, @ticket.venue, @ticket.city)
   end
 
