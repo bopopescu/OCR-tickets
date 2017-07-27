@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.setlist.fm/rest/1.0/search/setlists?artistName=KMFDM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      X-Api-Key:
+      - "<x_api_key>"
+      Host:
+      - api.setlist.fm
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 27 Jul 2017 05:16:48 GMT
+      X-Amzn-Requestid:
+      - ca626a42-728a-11e7-a1e4-bf66f763eb79
+      X-Amzn-Remapped-Content-Length:
+      - '35437'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      Cache-Control:
+      - no-transform, max-age=60
+      X-Amzn-Remapped-Date:
+      - Thu, 27 Jul 2017 05:16:48 GMT
+      Via:
+      - 1.1 39f9e0f028321e95b5ebd1cd55661fd6.cloudfront.net (CloudFront), 1.1 bbc0c6d660c6b9bfbf22053687e12fba.cloudfront.net
+        (CloudFront)
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding,Accept,Accept-Language
+      X-Cache:
+      - Hit from cloudfront
+      X-Amz-Cf-Id:
+      - slrlgRMO07mQ9Fnv8tcP38CezSshc9JcuoD6EuQkhZ8kNIHUKhTRVQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Thu, 27 Jul 2017 05:16:48 GMT
+recorded_with: VCR 3.0.3

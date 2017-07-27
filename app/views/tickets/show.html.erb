@@ -1,6 +1,10 @@
-<h1><%= @ticket.tess_text %></h1>
+<h1><%= @ticket.band %></h1>
 
 <%= image_tag(@ticket.ticket_img.url(:medium)) %>
+
+<h3><strong>Venue:</strong> <%= @ticket.band %> </h3>
+<h3><strong>City:</strong> <%= @ticket.city %> </h3>
+<h3><strong>Date:</strong> <%= @ticket.date %> </h3>
 
 <p><%= link_to "Edit", edit_ticket_path(@ticket) %></p>
 <p><%= link_to "Delete", ticket_path(@ticket),

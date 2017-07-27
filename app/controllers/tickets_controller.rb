@@ -45,7 +45,7 @@ class TicketsController < ApplicationController
 
 private
   def ticket_params
-    params.require(:ticket).permit(:ticket_img, :tess_text)
+    params.require(:ticket).permit(:ticket_img, :band, :venue, :city, :date)
   end
 
 end
