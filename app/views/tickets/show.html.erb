@@ -6,6 +6,11 @@
 <h3><strong>City:</strong> <%= @ticket.city %> </h3>
 <h3><strong>Date:</strong> <%= @ticket.date %> </h3>
 
+<h1>Setlist</h1>
+<div class="songs">
+  <%= @setlist %>
+</div>
+
 <p><%= link_to "Edit", edit_ticket_path(@ticket) %></p>
 <p><%= link_to "Delete", ticket_path(@ticket),
                          :data => {:confirm => "You sure?",

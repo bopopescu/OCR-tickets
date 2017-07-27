@@ -1,9 +1,9 @@
 <%= render "layouts/errors", :object => @ticket%>
 
 <%= form_for @ticket do |f| %>
-  <%= f.label :ticket_img, "Upload Ticket Image", class: 'col-sm-2 control-label' %>
+  <%= f.label :ticket_img, "Upload Ticket Image", class: 'col-sm-2 control-label' %><br>
   <%= f.file_field :ticket_img %><br>
-  <%= f.label :band, "Band/Artist", class: 'col-sm-2 control-label' %>
+  <%= f.label :band, "Band/Artist:", class: 'col-sm-2 control-label' %>
   <%= f.text_field :band %><br>
   <%= f.label :venue, "Venue Name:", class: 'col-sm-2 control-label' %>
   <%= f.text_field :venue %><br>
